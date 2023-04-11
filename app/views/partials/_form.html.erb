@@ -1,0 +1,31 @@
+
+<%= form_with model: @wine do |wine| %>
+  <div>
+    <%= wine.label :grape %><br>
+    <%= wine.text_field :grape %>
+  </div>
+
+  <div>
+    <%= wine.label :year %><br>
+    <%= wine.text_area :year %>
+  </div>
+
+  <div>
+    <%= wine.label :region %><br>
+    <%= wine.text_area :region %>
+  </div>
+
+  <div>
+    <%= wine.label :price %><br>
+    <%= wine.text_area :price %>
+  </div>
+
+  <div>
+    <%= wine.label :description %><br>
+    <%= wine.text_area :description %>
+  </div>
+
+  <div>
+    <%= wine.submit %>
+  </div>
+<% end %>
