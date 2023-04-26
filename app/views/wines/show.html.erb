@@ -1,12 +1,19 @@
-<h1><%= @wine.grape %></h1>
-<p><%= @wine.year %></p>
-<p><%= @wine.region %></p>
-<p>$<%= @wine.price %></p>
-<p><%= @wine.description %></p>
+<div class="container">
+  <h1><%= @wine.name %></h1>
+  <p><%= @wine.look_intensity %></p>
+  <p><%= @wine.color %></p>
+  <p><%= @wine.viscosity %></p>
+  <p><%= @wine.smell_intensity %></p>
+  <p><%= @wine.sweetness %></p>
+  <p><%= @wine.acidity %></p>
+  <p><%= @wine.tannin %></p>
+  <p>%<%= @wine.alcohol %></p>
+  <p><%= @wine.body %></p>
+  <%= link_to "back", wines_path %>
+  <%= link_to "edit", edit_wine_path(@wine) %>
+  <%= link_to "delete", wine_path(@wine), data: {
+                      turbo_method: :delete,
+                      turbo_confirm: "Are you sure?"
+                    } %>
 
-<%= link_to "Take me back to the vinos", wines_path %>
-<%= link_to "Edit", edit_wine_path(@wine) %>
-<%= link_to "Delete", wine_path(@wine), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
-                  } %>
+</div>

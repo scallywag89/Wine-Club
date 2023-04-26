@@ -1,31 +1,37 @@
+<%= form_for @wine do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control",  placeholder: 'Wine 1' %>
 
-<%= form_with model: @wine do |wine| %>
-  <div>
-    <%= wine.label :grape %><br>
-    <%= wine.text_field :grape %>
-  </div>
+    <%= f.label :look_intensity %>
+    <%= f.select :look_intensity, Wine::LOOK_INTENSITY_OPTIONS, {}, { class: "form-control" } %>
 
-  <div>
-    <%= wine.label :year %><br>
-    <%= wine.text_area :year %>
-  </div>
+    <%= f.label 'Colour (White)'%>
+    <%= f.select :color, Wine::COLOR_OPTIONS_WHITE, {}, { class: "form-control" } %>
 
-  <div>
-    <%= wine.label :region %><br>
-    <%= wine.text_area :region %>
-  </div>
+    <%= f.label 'Colour (Rose)'%>
+    <%= f.select :color, Wine::COLOR_OPTIONS_ROSE, {}, { class: "form-control" } %>
 
-  <div>
-    <%= wine.label :price %><br>
-    <%= wine.text_area :price %>
-  </div>
+    <%= f.label 'Colour (Red)'%>
+    <%= f.select :color, Wine::COLOR_OPTIONS_RED, {}, { class: "form-control" } %>
 
-  <div>
-    <%= wine.label :description %><br>
-    <%= wine.text_area :description %>
-  </div>
+    <%= f.label 'Smell Intensity'%>
+    <%= f.select :smell_intensity, Wine::SMELL_INTENSITY_OPTIONS, {}, { class: "form-control" } %>
 
-  <div>
-    <%= wine.submit %>
+    <%= f.label 'Sweetness'%>
+    <%= f.select :sweetness, Wine::SWEETNESS_OPTIONS, {}, { class: "form-control" } %>
+
+    <%= f.label 'Acidity'%>
+    <%= f.select :acidity, Wine::ACIDITY_OPTIONS, {}, { class: "form-control" } %>
+
+    <%= f.label 'Tannin'%>
+    <%= f.select :tannin, Wine::TANNIN_OPTIONS, {}, { class: "form-control" } %>
+
+    <%= f.label 'Alcohol'%>
+    <%= f.select :alcohol, Wine::ALCOHOL_OPTIONS, {}, { class: "form-control" } %>
+
+    <%= f.label 'Body'%>
+    <%= f.select :body, Wine::BODY_OPTIONS, {}, { class: "form-control" } %>
   </div>
+  <%= f.submit "Save", class: "btn btn-primary" %>
 <% end %>

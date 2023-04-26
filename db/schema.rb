@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_22_094652) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_26_051539) do
   create_table "wines", force: :cascade do |t|
     t.string "grape"
     t.integer "year"
@@ -19,6 +19,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_22_094652) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "look_intensity"
+    t.string "color"
+    t.string "viscosity"
+    t.string "smell_intensity"
+    t.string "sweetness"
+    t.string "acidity"
+    t.string "tannin"
+    t.string "alcohol"
+    t.string "body"
+    t.string "name"
   end
 
 end
