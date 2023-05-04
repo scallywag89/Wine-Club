@@ -1,0 +1,16 @@
+@import 'fonts';
+
+.merch-content h2{
+  font-family: $font-header;
+  font-weight: $font-weight-regular;
+  margin: 0;
+}
+
+.merch-content p {
+  font-weight: $font-weight-light;
+  margin-bottom: 32px;
+}
+
+.merch-img-container {
+  margin-bottom: 0;
+}
