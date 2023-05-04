@@ -1,8 +1,12 @@
 <div class="header">
-  <div><%= image_tag 'logo.png' %></div>
   <div>
-    <%= link_to 'new wine', new_wine_path %>
-    <%= link_to 'cellar', wines_path %>
-    <%= link_to 'merch', pages_merch_path %>
+    <%= link_to wines_path do%>
+      <%= image_tag 'logo.png' %>
+    <% end %>
+  </div>
+  <div>
+    <%= link_to 'new wine', new_wine_path, class: 'header-item' %>
+    <%= link_to 'cellar', wines_path, class: 'header-item' %>
+    <%= link_to 'merch', pages_merch_path, class: 'header-item' %>
   </div>
 </div>

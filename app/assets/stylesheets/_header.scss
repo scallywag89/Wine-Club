@@ -7,23 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
-  a {
-    text-decoration: none;
-    font-family: $font-header;
-    font-weight: $font-weight-light;
-    color: black;
-    margin-left: 40px;
-    padding-bottom: 8px;
-    opacity: 0.6;
-    transition: 0.3s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-      border-bottom: 2px solid black;
-    }
-  }
 }
 
 .header img {
@@ -34,4 +17,20 @@
   &:hover {
     opacity: 1;
   }
+}
+
+.header-item {
+  text-decoration: none;
+  font-family: $font-header;
+  font-weight: $font-weight-light;
+  color: black;
+  margin-left: 40px;
+  padding-bottom: 8px;
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
+}
+
+.header-item:hover {
+  opacity: 1;
+  border-bottom: 2px solid black;
 }

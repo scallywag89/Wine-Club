@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@200;400;700&display=swap');
 
 @import 'fonts';
 @import 'landing';
@@ -20,6 +21,7 @@
 @import 'button';
 @import 'header';
 @import 'footer';
+@import 'about';
 
 html {
   height: 100%;
@@ -28,6 +30,7 @@ html {
 $salmon-color: #FEF3EA;
 
 body {
+  font-family: 'Comme', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100%;
