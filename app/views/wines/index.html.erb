@@ -1,8 +1,10 @@
-<div class="container">
-  <%= link_to 'add a vino', new_wine_path %>
-  <% if @wines %>
-    <% @wines.each do |wine| %>
-      <%= link_to wine.name, wine_path(wine) %>
+<div class="content">
+  <div class="container">
+    <%= link_to 'add a vino', new_wine_path %>
+    <% if @wines %>
+      <% @wines.each do |wine| %>
+        <%= link_to wine.name, wine_path(wine) %>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>

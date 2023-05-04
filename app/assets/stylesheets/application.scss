@@ -13,13 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
 @import 'fonts';
 @import 'landing';
 @import 'container';
-@import 'buttons';
+@import 'button';
+@import 'header';
+@import 'footer';
 
+html {
+  height: 100%;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   background-color: #FEF3EA;
   padding: 0;
   margin: 0;

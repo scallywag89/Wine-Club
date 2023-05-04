@@ -2,9 +2,9 @@ class Wine < ApplicationRecord
   validates :name, presence: true
   # LOOK
   LOOK_INTENSITY_OPTIONS = %w[Pale Medium Deep].freeze
-  COLOR_OPTIONS_WHITE = %w[N/A Straw Yellow Gold Amber Brown].freeze
-  COLOR_OPTIONS_ROSE = %w[N/A Pink Salmon Copper].freeze
-  COLOR_OPTIONS_RED = %w[N/A Purple Ruby Garnet Tawny Brown].freeze
+  COLOR_OPTIONS_WHITE = %w[Straw Yellow Gold Amber Brown].freeze
+  COLOR_OPTIONS_ROSE = %w[Pink Salmon Copper].freeze
+  COLOR_OPTIONS_RED = %w[Purple Ruby Garnet Tawny Brown].freeze
   VISCOSITY_OPTIONS = %w[Watery Med-Low Medium Med-High Syrupy].freeze
 
   # SMELL

@@ -4,34 +4,34 @@
     <%= f.text_field :name, class: "form-control",  placeholder: 'Wine 1' %>
 
     <%= f.label :look_intensity %>
-    <%= f.select :look_intensity, Wine::LOOK_INTENSITY_OPTIONS, {}, { class: "form-control" } %>
+    <%= f.select :look_intensity, Wine::LOOK_INTENSITY_OPTIONS, { include_blank: true }, { class: "form-control" }%>
 
     <%= f.label 'Colour (White)'%>
-    <%= f.select :color, Wine::COLOR_OPTIONS_WHITE, {}, { class: "form-control" } %>
+    <%= f.select :color, Wine::COLOR_OPTIONS_WHITE, { include_blank: true }, { class: "form-control" }%>
 
     <%= f.label 'Colour (Rose)'%>
-    <%= f.select :color, Wine::COLOR_OPTIONS_ROSE, {}, { class: "form-control" } %>
+    <%= f.select :color, Wine::COLOR_OPTIONS_ROSE, { include_blank: true }, { class: "form-control" }%>
 
     <%= f.label 'Colour (Red)'%>
-    <%= f.select :color, Wine::COLOR_OPTIONS_RED, {}, { class: "form-control" } %>
+    <%= f.select :color, Wine::COLOR_OPTIONS_RED, { include_blank: true }, { class: "form-control" }%>
 
     <%= f.label 'Smell Intensity'%>
-    <%= f.select :smell_intensity, Wine::SMELL_INTENSITY_OPTIONS, {}, { class: "form-control" } %>
+    <%= f.select :smell_intensity, Wine::SMELL_INTENSITY_OPTIONS, { include_blank: true }, { class: "form-control" }%>
 
     <%= f.label 'Sweetness'%>
-    <%= f.select :sweetness, Wine::SWEETNESS_OPTIONS, {}, { class: "form-control" } %>
+    <%= f.select :sweetness, Wine::SWEETNESS_OPTIONS, { include_blank: true }, { class: "form-control" }%>
 
     <%= f.label 'Acidity'%>
-    <%= f.select :acidity, Wine::ACIDITY_OPTIONS, {}, { class: "form-control" } %>
+    <%= f.select :acidity, Wine::ACIDITY_OPTIONS, { include_blank: true }, { class: "form-control" }%>
 
     <%= f.label 'Tannin'%>
-    <%= f.select :tannin, Wine::TANNIN_OPTIONS, {}, { class: "form-control" } %>
+    <%= f.select :tannin, Wine::TANNIN_OPTIONS, { include_blank: true }, { class: "form-control" }%>
 
     <%= f.label 'Alcohol'%>
-    <%= f.select :alcohol, Wine::ALCOHOL_OPTIONS, {}, { class: "form-control" } %>
+    <%= f.select :alcohol, Wine::ALCOHOL_OPTIONS, { include_blank: true }, { class: "form-control" }%>
 
     <%= f.label 'Body'%>
-    <%= f.select :body, Wine::BODY_OPTIONS, {}, { class: "form-control" } %>
+    <%= f.select :body, Wine::BODY_OPTIONS, { include_blank: true }, { class: "form-control" }%>
   </div>
   <%= f.submit "Save", class: "btn btn-primary" %>
 <% end %>
