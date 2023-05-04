@@ -16,12 +16,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@200;400;700&display=swap');
 
 @import 'fonts';
+@import 'button';
 @import 'landing';
 @import 'container';
-@import 'button';
 @import 'header';
 @import 'footer';
 @import 'about';
+@import 'merch';
 
 html {
   height: 100%;
@@ -33,6 +34,7 @@ body {
   font-family: 'Comme', sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-height: 100%;
   background-color: $salmon-color;
   padding: 0;

@@ -1,0 +1,17 @@
+@import 'fonts';
+
+.btn-primary {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: $font-weight-light;
+  opacity: 0.7;
+  color: black;
+  background-color: #ffde90;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    opacity: 1;
+  }
+}
